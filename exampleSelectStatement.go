@@ -35,7 +35,10 @@ func selectStatement() {
 		case msg2 := <-ch2:
 			fmt.Println("received from channel 2:", msg2)
 		}
+		// As this select statement has no default, it wil block until one
+		// of its cases is triggered.
 	}
+
 	// Two messages are sent to the channels by go routines
 	// so if the select statement was called three times this
 	// would result in a deadlock because all the go routines would be asleep.

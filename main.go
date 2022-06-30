@@ -6,4 +6,5 @@ func main() {
 	channelDirections()
 	selectStatement()
 	timeout()
+	nonBlocking()
 }
