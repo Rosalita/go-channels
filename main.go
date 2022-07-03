@@ -8,5 +8,5 @@ func main() {
 	timeout()
 	nonBlocking()
 	closeChannels()
-
+	rangeOverChannel()
 }
