@@ -7,4 +7,6 @@ func main() {
 	selectStatement()
 	timeout()
 	nonBlocking()
+	closeChannels()
+
 }
