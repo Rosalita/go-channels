@@ -9,4 +9,6 @@ func main() {
 	nonBlocking()
 	closeChannels()
 	rangeOverChannel()
+	timer()
+	ticker()
 }
