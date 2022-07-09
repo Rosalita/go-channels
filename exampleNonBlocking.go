@@ -29,15 +29,15 @@ func nonBlocking() {
 		fmt.Println("no message sent") // so the default case is selected.
 	}
 
-	// A select statement can use multiple cases above a default clause to implement 
+	// A select statement can use multiple cases above a default clause to implement
 	// multi-way non-blocking select.
 	// This select statement will do non-blocking receives on the messages and signals
 	// channels.
 
 	select {
-	case msg := <- messages:
+	case msg := <-messages:
 		fmt.Println("received message: ", msg)
-	case sig := <- signals:
+	case sig := <-signals:
 		fmt.Println("received signal: ", sig)
 	default:
 		fmt.Println("no activity")

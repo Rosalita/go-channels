@@ -11,4 +11,5 @@ func main() {
 	rangeOverChannel()
 	timer()
 	ticker()
+	workerPool()
 }
