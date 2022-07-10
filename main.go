@@ -12,4 +12,5 @@ func main() {
 	timer()
 	ticker()
 	workerPool()
+	waitGroup()
 }
